@@ -160,7 +160,7 @@ left: 748px;
 gap: 0px;
 border-radius: 10px 0px 0px 0px;
 opacity: 0px;
-
+padding:50px;
 }
 
 
@@ -321,6 +321,42 @@ opacity: 0px;
   display: inline;
 }
 
-.Us{
+.us{
   color: #FDA600;
 }
+.ourvision{
+  color:#6841F2;
+}
+.ourmission{
+  color:#6841F2;
+}
+
+.ourvisiontext{
+  color:#686868;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-family: Open Sans;
+font-size: 18px;
+font-weight: 400;
+line-height: 29.96px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+
+}
+.ourmissiontext{
+  color:#686868;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-family: Open Sans;
+font-size: 18px;
+font-weight: 400;
+line-height: 29px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+}
+
+  
+
