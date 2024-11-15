@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
 
 :root {
-    --primary-color: #4e2dcf;
+    --primary-color: #250b8d;
     --secondary-color: #664a16;
     --text-color: #1E1E1E;
     --background-color: #ffffff;
@@ -64,8 +64,172 @@ nav_logo {
 }
 
 @media (min-width: 780px) {
+  .nav_links {
+      display: flex;
+  }
+}
+header {
+    background-image: url('images/white-office-desk-table-with-laptop-coffee-cup-plant-top-view-with-copy-space-flat-lay_795422-6243.jpg');
+    position: relative;
+    color: var(--primary-color);
+}
+
+a.contact_btn {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+a.contact_btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.footer_cards {
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: end;
+}
+
+.card {
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--text-color);
+    height: max-content;
+    cursor: pointer;
+    transition: 0.5s;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.card h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.card h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.card p {
+    margin-top: 1.2rem;
+    font-size: .9rem;
+    transition: 0.3s;
+}
+
+.nav_logo img {
+    max-height: 5px;
+    width: 100px;
+}
+
+
+@media (min-width:780px) {
     .nav_links {
         display: flex;
+        min-height: 120;
+    }
+    .nav_logo img {
+        min-height: 75px;
+        min-width: 130px;
+    }
+}
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+section:nth-child(1) {
+    color: var(--background-color);
+}
+
+section:nth-child(2) {
+    color: var(--secondary-color);
+    background: var(--background-color);
+}
+
+section:nth-child(3) {
+    color: var(--background-color);
+}
+
+section:nth-child(4) {
+    color: var(--primary-color);
+    background: var(--background-color);
+}
+
+section.container {
+    margin: 5vw;
+}
+
+section h1 {
+    font-size: 3.75rem;
+    font-weight: 600;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color:rgb(255,165,0);
+}
+
+section .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+section .cards .text-card {
+    background-color: var(--primary-color);
+    padding: 1.25rem;
+    flex: 1 1 300px;
+    max-width: 400px;
+    color:white;
+    }
+
+section .cards .text-card h3 {
+    font-size: 1.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0.625rem;
+    cursor: pointer;
+
+}
+.text-card:hover{
+    transition: 0.5s;   
+    opacity: 0.8;
+}
+.text-card:active{
+    opacity:0.3;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        max-width: 100px;
+        max-height: 60px;
     }
 }
 
@@ -342,10 +506,8 @@ line-height: 29.96px;
 text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
-
-
 }
-.ourmissiontext{
+.ourmissiontext {
   color:#686868;
   padding-top:10px;
   padding-bottom:10px;
@@ -357,6 +519,3 @@ text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
 }
-
-  
-
